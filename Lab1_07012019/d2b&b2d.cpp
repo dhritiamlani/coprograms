@@ -49,6 +49,7 @@ int main()
 			default: cout<<"\nInvalid choice!\n";
 		}
 	}while(ch!=0);
+	cout<<"\nYou know what? BYEEEE!\n";
 	return 0;
 }		
 	
