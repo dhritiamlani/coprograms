@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 int n,i,r,d,m,c,b,ch,count;
 void d2b()
@@ -15,10 +16,11 @@ void d2b()
 		d=d*10+r;
 	}
 	cout<<"\nDecimal="<<m<<"\nBinary="<<d<<"\n";
+	cout<<"\nIdk what to chnage!! T^T\n";
 }
 void b2d()
 {
-	cout<<"\nEnter the binary number tyo be converted\n";
+	cout<<"\nEnter the binary number to be converted\n";
 	cin>>b;
 	c=b;
 	count=0;
@@ -26,9 +28,10 @@ void b2d()
 	{
 		b=b%10;
 		b=b/10;
-		//sum=sum+b*pow(2,count);
+		sum=sum+b*pow(2,count);
 		count++;
 	}
+	cout<<"\nBinary="<<b<<"\nDecimal="<<sum<<"\n";
 }
 int main()
 {
