@@ -11,7 +11,7 @@ void d2b()
 	j=1;
 	while(n!=0)
 	{
-		r=n%2;
+		r=n%2; //trying stuff
 		n=n/2;
 		d=d+r*j;
 		j=j*10;
