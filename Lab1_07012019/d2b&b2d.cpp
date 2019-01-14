@@ -1,43 +1,44 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-int n,i,r,d,m,c,b,ch,count;
+int n,x=0,i,r,t,d,j,b,ch,count,sum=0;
 void d2b()
 {
-	cout<<"\nEnter the decimal number to be converted\n";
+	cout<<"Enter decimal number\n";
 	cin>>n;
 	r=0;
 	d=0;
-	m=n;
+	j=1;
 	while(n!=0)
 	{
 		r=n%2;
 		n=n/2;
-		d=d*10+r;
+		d=d+r*j;
+		j=j*10;
 	}
-	cout<<"\nDecimal="<<m<<"\nBinary="<<d<<"\n";
-	cout<<"\nIdk what to chnage!! T^T\n";
+	cout<<"Binary value is\n"<<d;
 }
 void b2d()
 {
-	cout<<"\nEnter the binary number to be converted\n";
+	cout<<"Enter binary number\n";
 	cin>>b;
-	c=b;
 	count=0;
+	x=1;
 	while(b!=0)
 	{
-		b=b%10;
+		t=b%10;
 		b=b/10;
-		sum=sum+b*pow(2,count);
+		sum=sum+t*x;
+		x=x*2;
 		count++;
 	}
-	cout<<"\nBinary="<<b<<"\nDecimal="<<sum<<"\n";
+	cout<<"Decimal value is\n"<<sum;
 }
 int main()
 {
 	do
 	{
-		cout<<"\nEnter your choice\n1-Convert decimal to binary\n2-convert binary to decimal\n0-Exit\n";
+		cout<<"\nEnter your choice\n1: Decimal to binary\n2: binary to Decimal\n";
 		cin>>ch;
 		switch(ch)
 		{
@@ -49,7 +50,6 @@ int main()
 			default: cout<<"\nInvalid choice!\n";
 		}
 	}while(ch!=0);
-	cout<<"\nYou know what? BYEEEE!\n";
 	return 0;
 }		
 	
