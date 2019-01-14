@@ -32,7 +32,7 @@ void b2d()
 		x=x*2;
 		count++;
 	}
-	cout<<"Decimal value is\n"<<sum; //cmment
+	cout<<"Decimal value is\n"<<sum; //corrected comment
 }
 int main()
 {
